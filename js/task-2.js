@@ -1,5 +1,9 @@
 function calcAverageCalories(days) {
-    let sumColoriesWeek = 0;
+  let sumColoriesWeek = 0;
+  
+ if (days.length === 0) {
+    return 0;
+  }
     for (const day of days) {
         sumColoriesWeek += day.calories;
     }
