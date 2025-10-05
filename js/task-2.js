@@ -3,7 +3,7 @@ function calcAverageCalories(days) {
     for (const day of days) {
         sumColoriesWeek += day.calories;
     }
-    return sumColoriesWeek / 7;
+    return sumColoriesWeek / days.length;
 
 }
 
